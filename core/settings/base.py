@@ -47,7 +47,12 @@ INSTALLED_APPS = [
     *DJANGO_APPS,
     *LIBRARY_APPS,
     *MY_APPS,
+    
 ]
+
+ 
+
+AUTH_USER_MODEL = "testapp.CustomUser"
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
@@ -180,3 +185,4 @@ CKEDITOR_5_CONFIGS = {
         'toolbar': ['bold', 'italic', 'link'],
     },
 }
+ 
